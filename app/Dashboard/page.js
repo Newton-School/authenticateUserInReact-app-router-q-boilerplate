@@ -1,14 +1,8 @@
 "use client"
 import Link from "next/link";
-import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext";
 
 function Dashboard() {
-  const { setLoggedIn } = useContext(AuthContext);
-
-  const handleLogout = () => {
-    setLoggedIn(false);
-  };
 
   return (
     <div id="dashboardPage">
